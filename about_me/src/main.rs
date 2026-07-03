@@ -7,8 +7,7 @@ Steps for compiling:
 1. Install rust compiler from the official website, steps for installation are updated there.
 2. locate the folder and open terminal
 3. In terminal, use command cd <folderpath/foldername> to move to the directory
-4. Use cargo build command to compile
-Code is not compiled.
+4. Use cargo build command to compile or use cargo run
 Task insructions are given below.
 
 Replace the `println!` macro with `print!`. What happens?
