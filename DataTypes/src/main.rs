@@ -68,11 +68,51 @@ fn main() {
     println!("The value of numbers is: {:?}", numbers);
 
     let os = ["Macintosh", "Windows", "Linux"];
-    println!("The value of os is: {:?}", os);
+    println!("The value of os is: {os:?}");
+
+    println!("The value of os is: {os:#?}");
 
     let currency: [f64; 0] = [];
     println!("The value of currency is: {:?}", currency);
 
     println!("{}", numbers[2]);
+
+
+    //Trying tuple
+    let e_id = (101, "John Doe", 50000.0);
+
+    let name = e_id.1;
+    let salary = e_id.2;
+    let id = e_id.0;
+    println!("Employee ID: {id}, Name: {name}, Salary: {salary}");
+
+    dbg!(e_id);
+
+
+    let (x, y, z) = (1, 2, 3);
+    println!("The value of x is: {x}, y is: {y}, z is: {z}");
+
+    let (id, name, salary) = e_id;
+    println!("Employee ID: {id}, Name: {name}, Salary: {salary}");
+
+
+    let date = 1..31;   //31 not included
+    println!(" {date:?}");
+
+    for i in date {
+        println!("{i}");
+    }
+
+    let date = 1..=31;  //31 included
+    println!(" {date:?}");
+
+    for i in date {
+        println!("{i}");
+    }
+
+    let ch = 'A'..='k';
+    for i in ch {
+        println!("{i}");
+    }
 
 }
