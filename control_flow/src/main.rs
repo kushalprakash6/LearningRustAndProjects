@@ -11,8 +11,11 @@ fn main() {
         println!("Number is 1");
 
     }
-    if num != 1 {
-        println!("Number is not 1");
+    else if num >1 {
+        println!("Number is greater than 1");
+    }
+    else {
+        println!("Number is less than 1");
     }
 
 }
