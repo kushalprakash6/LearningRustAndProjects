@@ -59,6 +59,29 @@ fn main() {
     }
 
 
+    let mut sec = 10;
+
+    loop {
+
+        if sec == 0 {
+            println!("Blast off!");
+            break;
+        }
+
+        println!("{sec} seconds to blast off! ");
+        sec -= 1;
+
+    }
+
+    sec = 10;
+    
+    while sec > 0 {
+        println!("{sec} seconds to blast off! ");
+        sec -= 1;
+    }
+    println!("Blast off!");
+
+    countdown(10);
 }
 
 fn even_or_odd(num: i32) {
@@ -69,4 +92,16 @@ fn even_or_odd(num: i32) {
         "odd"
     };
     println!("the number is {res}");
+}
+
+fn countdown(sec: i32) {
+
+    if sec != 0 {
+        println!("{sec} to blast off!!!");
+        countdown(sec -1);
+    }
+    else {
+        println!("Blastoff!!!!!!!!!");
+    }
+
 }
