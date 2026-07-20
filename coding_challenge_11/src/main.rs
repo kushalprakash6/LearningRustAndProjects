@@ -12,7 +12,7 @@ struct ChatMessage<T> {
 
 impl ChatMessage<DigitalConsent> {
     fn consume_entertainment(&self) {
-        println!("{:?}", self.content)
+        println!("Wathcing the {:?}", self.content)
     }
 }
 
