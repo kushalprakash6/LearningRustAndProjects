@@ -1,5 +1,6 @@
 use fake::Dummy;
 
+/// Category of products our comapany sells
 #[derive(Debug, Dummy)]
 pub enum ProductCategory {
     Ladder, 

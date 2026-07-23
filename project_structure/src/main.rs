@@ -1,13 +1,19 @@
-mod inventory;
-mod orders;
+// mod inventory;
+// mod orders;
 
 use fake::{Fake, Faker};
 use std::{fmt, 
     io::{self, stdin, stdout} 
 };
 
-use inventory::MANAGER;
-use orders::MANAGER as ORDERS_MANAGER;
+// use inventory::MANAGER;
+// use orders::MANAGER as ORDERS_MANAGER;
+
+use project_structure::inventory;
+use project_structure::orders;
+use project_structure::MANAGER;
+use project_structure::ORDERS_MANAGER;
+
 
 use crate::inventory::products::ProductCategory;
 
